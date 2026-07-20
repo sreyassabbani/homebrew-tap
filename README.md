@@ -1,9 +1,1 @@
-# Homebrew Tap
-
-Homebrew formulae for `sreyassabbani` projects.
-
-Install saterminal with:
-
-```sh
-brew install sreyassabbani/tap/saterminal
-```
+Homebrew formulae for my projects.
