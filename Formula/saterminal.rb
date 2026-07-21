@@ -1,8 +1,8 @@
 class Saterminal < Formula
   desc "Local-first SAT practice in the terminal"
   homepage "https://github.com/sreyassabbani/saterminal"
-  url "https://registry.npmjs.org/saterminal/-/saterminal-0.6.1.tgz"
-  sha256 "992627553028cb9b3128dd60cbaa0ae2e977d4692ab2884adb95755dc73a243e"
+  url "https://registry.npmjs.org/saterminal/-/saterminal-0.6.8.tgz"
+  sha256 "3ae5be4fcd026577fdfc34f805c9a793eb619358c6eea224add5784fa4d6f67f"
   license "MIT"
 
   depends_on "bun"
