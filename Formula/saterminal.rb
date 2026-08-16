@@ -1,19 +1,21 @@
 class Saterminal < Formula
   desc "Local-first SAT practice in the terminal"
   homepage "https://github.com/sreyassabbani/saterminal"
-  url "https://registry.npmjs.org/saterminal/-/saterminal-0.6.10.tgz"
-  sha256 "05afb9ddef469f886561d9d3bb62ffae45745f255945159e1612c0a6ac58167b"
+  version "0.6.13"
   license "MIT"
 
-  preserve_rpath
+  on_arm do
+    url "https://registry.npmjs.org/saterminal-darwin-arm64/-/saterminal-darwin-arm64-0.6.13.tgz"
+    sha256 "64831a403e67181a48c1bc5af931793ae945187bcf134a2cbb1d9a6635bae605"
+  end
 
-  depends_on "bun"
+  on_intel do
+    url "https://registry.npmjs.org/saterminal-darwin-x64/-/saterminal-darwin-x64-0.6.13.tgz"
+    sha256 "56ed91ced677c8fda7e14bbaed5e1ba73c617bd5641525708845bae592082cc1"
+  end
 
   def install
-    system "bun", "install", "--production", "--omit=peer"
-    libexec.install Dir["*"]
-    chmod 0755, libexec/"src/cli/index.ts"
-    (bin/"sat").write_env_script libexec/"src/cli/index.ts", PATH: Formula["bun"].opt_bin
+    bin.install "bin/sat"
   end
 
   test do
