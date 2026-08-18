@@ -1,17 +1,17 @@
 class Saterminal < Formula
   desc "Local-first SAT practice in the terminal"
   homepage "https://github.com/sreyassabbani/saterminal"
-  version "0.6.14"
+  version "0.6.15"
   license "MIT"
 
   on_arm do
-    url "https://registry.npmjs.org/saterminal-darwin-arm64/-/saterminal-darwin-arm64-0.6.14.tgz"
-    sha256 "87369c409513fc51cf17c16ae2744c3fbfe4b746bcefb589d3ab1dc6d45333a3"
+    url "https://registry.npmjs.org/saterminal-darwin-arm64/-/saterminal-darwin-arm64-0.6.15.tgz"
+    sha256 "4e91120a068993e9794b6bd3a6ddb7787a7217747a0ee0db5235d34280d1fe9d"
   end
 
   on_intel do
-    url "https://registry.npmjs.org/saterminal-darwin-x64/-/saterminal-darwin-x64-0.6.14.tgz"
-    sha256 "ac778220a315acf66dc77241941a7f5ea9d70ce31e1ffd8a8838a4eca204a73d"
+    url "https://registry.npmjs.org/saterminal-darwin-x64/-/saterminal-darwin-x64-0.6.15.tgz"
+    sha256 "9a31af1455df201f416c56886427ed70bc51bed17297c8a6a9c01ded87f22791"
   end
 
   def install
